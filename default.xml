@@ -505,4 +505,12 @@
     <copyfile src="bootimage/Android.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/google" name="os2sd/android_vendor_google" />
+  
+  <!-- P500 repos -->
+  <project name="os2sd/android_device_lge_msm7x27-common" path="device/lge/msm7x27-common" />
+  <project name="os2sd/android_kernel_lge_msm7x27-3.0.x" path="kernel/lge/msm7x27-3.0.x" />
+  <project name="os2sd/android_device_lge_p500" path="device/lge/p500" />
+  <project name="os2sd/android_vendor_qcom_msm7x27" path="vendor/qcom/msm7x27" />
+  <project name="os2sd/android_device_qcom_msm7x27" path="device/qcom/msm7x27" />
+  <project name="os2sd/android_vendor_lge" path="vendor/lge" />
 </manifest>
