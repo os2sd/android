@@ -25,7 +25,9 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="os2sd/android" />
+  <project path="android" name="os2sd/android">
+    <copyfile src="build_scripts/Fetch.sh" dest="Fetch.sh" />
+  </project>
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="os2sd/android_art" />
