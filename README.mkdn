@@ -1,16 +1,16 @@
-Android for ARMv6 and other Legacy Devices - CyanogenMod 11.0
+OS2SD for LG Optimus ONE - CyanogenMod 11.0
 ===========
 
 Getting Started
 ---------------
 
-To get started with Android for ARMv6/CyanogenMod, you'll need to get
+To get started with OS2SD for LG Optimus ONE, you'll need to get
 familiar with [Git and Repo](http://source.android.com/source/developing.html).
 
 
 To initialize your local repository using the CyanogenMod trees, use a command like this:
 
-    repo init -u git://github.com/androidarmv6/android.git -b cm-11.0
+    repo init -u git://github.com/os2sd/android.git -b cm-11.0
 
 Then to sync up:
 
@@ -19,56 +19,17 @@ Then to sync up:
 
 Build your device:
 
-    source build/envsetup.sh
-    brunch DEVICENAME (for ex: brunch cooper)
+    lunch cm_p500-userdebug
+    time mka bacon
+
+or  for recovery build
+
+    lunch cm_p500-eng
+    time mka recoveryimage
+
+(mka instead of make -j* will supposedly optimize the number of threads based on your cpu, and then time will display total time when it finishes your build.)
 
 Flash ZIP:
 
-    out/target/product/DEVICENAME/cm-VERSION-DEVICENAME.zip
-
-
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
-
-
-Gerrit Code Review
-------------------
-
-We have a gerrit instance at http://review.androidarmv6.org.
-Please don't try to push directly to github.
-Ask an owner for forking stuff for gerrit.
-We will be happy to oblige.
-
-Gerrit Setup (yes double review.review, change GERRITUSERNAME with your username)
-
-    git config --global review.review.androidarmv6.org.username GERRITUSERNAME
-
-Uploading Patches
-
-    cd WORKING_DIR
-    source build/envsetup.sh
-    cd PROJECT_DIR
-    repo start cm-11.0 .
-    ... make changes ...
-    git add .
-    git commit -m "Commit message"
-    repo upload .
-    repo abandon cm-11.0 .
-
-
-
-Contact
--------
-
-For more information on this Github Organization and how it is structured, 
-please go to [http://androidarmv6.github.io/](http://androidarmv6.github.io/)
-
-Join us on #droidarmv6 (temporarily) or usually #androidarmv6 (usually - don't join this channel now) for help and support or just for a chat!
-
-Disclaimer
---------
-
-All of these device are not supported by CyanogenMod since they use the old Qualcomm
-Snapdragon MSM7x27 chip, and hence cut off by the CyanogenMod team. This team (androidarmv6)
-is in no way, shape or form affiliated by the CyanogenMod team and this project is not
-endorsed or supported by the CyanogenMod team.
-
+    out/target/product/p500/cm-VERSION-p500.zip
+    
