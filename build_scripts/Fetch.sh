@@ -12,6 +12,7 @@ path=(
 bionic
 build
 dalvik
+bootable/recovery
 external/chromium
 external/chromium_org
 external/libncurses
