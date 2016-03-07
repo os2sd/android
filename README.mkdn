@@ -16,6 +16,7 @@ Then to sync up:
 
     repo sync
     sh vendor/cm/get-prebuilts
+    . build/envsetup.sh
 
 Build your device:
 
