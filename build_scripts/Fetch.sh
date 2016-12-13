@@ -69,7 +69,7 @@ then
 for ((i = 0; i < $repos; i++)) 
 do
 echo "Fetching ${path[i]}"
-git -C ${path[i]} fetch ${remote} 
+git -C ${path[i]} fetch ${remote} ${branch}
 done
 echo
 fi
