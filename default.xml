@@ -28,6 +28,7 @@
   <project path="android" name="os2sd/android">
     <copyfile src="build_scripts/Fetch.sh" dest="Fetch.sh" />
     <copyfile src="build_scripts/Build.sh" dest="Build.sh" />
+    <copyfile src="build_scripts/Update.sh" dest="Update.sh" />
   </project>
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
