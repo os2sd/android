@@ -1,8 +1,8 @@
 #! /bin/bash
 
 main_branch="cm-11.0"
-main_remote="CyanogenMod"
-url_start="https://github.com/CyanogenMod/android_"
+main_remote="LineageOS"
+url_start="https://github.com/LineageOS/android_"
 url_end=".git"
 git_start="git@github.com:os2sd/android_"
 #git_start="https://github.com/os2sd/android_"
