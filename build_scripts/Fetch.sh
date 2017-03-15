@@ -148,7 +148,7 @@ then
       branch=$main_branch
     fi
     echo "Pushing ${path[i]} changes"
-    git="${gitstart}$(echo ${path[i]} | sed 's.\/._.g')${gitend}"
+    git="${git_start}$(echo ${path[i]} | sed 's.\/._.g')${git_end}"
     git -C ${path[i]} push ${git} ${branch}
   done
 fi
