@@ -47,10 +47,10 @@ export KBUILD_BUILD_HOST=BuildDroid
 . build/envsetup.sh
 if [[ "$*" == "-"* ]] && [[ "$*" == *"r"* ]]; then
   echo -e "\e[32mBuilding recoveryimage.\e[0m"
-  lunch cm_p500-eng
+  lunch lineage_p500-eng
   time make bacon -j4
 else
   echo -e "\e[32mBuilding ROM.\e[0m"
-  lunch cm_p500-userdebug
+  lunch lineage_p500-userdebug
   time make bacon -j4
 fi
