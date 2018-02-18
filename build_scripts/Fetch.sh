@@ -9,7 +9,7 @@ git_start="git@github.com:os2sd/android_"
 git_end=".git"
 twrp_url="https://github.com/omnirom/android_bootable_recovery.git"
 twrp_remote="omnirom"
-twrp_branch="android-6.0"
+twrp_branch="android-7.1"
 twrp_path="bootable/recovery-twrp"
 
 path=(
